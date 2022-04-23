@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Slab:wght@200;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Playing Video</title>
+</head>
+<body>
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+          <img src="images/menu.png" class="menu-icon" id="new-icon" alt="" />
+          <img src="images/logo.png" class="logo" id="youtube-logo" alt="" />
+        </div>
+        <div class="nav-middle flex-div">
+          <div class="search-box flex-div">
+            <input type="text" placeholder="Search" />
+            <img src="images/search.png" alt="" />
+          </div>
+          <img src="images/voice-search.png" class="mic-icon" alt="" />
+        </div>
+        <div class="nav-right flex-div">
+          
+          <img src="images/create.jpg" alt="" />
+          <img src="images/more.png" alt="" />
+          <img src="images/notification.png" alt="" />
+          <img src="images/Jack.png" class="user-icon" />
+        </div>
+        <div class="settings">
+          <div class="old-comment">
+            <img src="images/Jack.png" alt="" id="profile-img" />
+            <div>
+              <p>Kanasvi Patil</p>
+              <div class="box">
+                <div class="toggle">
+                  <!-- <button id="switch" onclick="themeChange()">Switch</button> -->
+                   <div> 
+                  
+                    <input type="radio"  name="theme" onchange="themeChange('theme-dark')">
+                    <label>Dark</label>
+                </div>
+                <div>
+                
+                  <input type="radio" name="theme" onchange="themeChange('theme-light')">
+                  <label>Light</label>
+                </div>
+                  <!-- <i class="fa-solid fa-moon toggle-icon"></i>Dark Theme -->
+                </div>
+              </div>
+              <!-- <div class=" flex-div settings-height toggle">
+                      <i class="fa-solid fa-moon toggle-icon"></i>
+                      <i class="fa-solid fa-sun toggle-icon"></i>
+                      <div class="toogle ball"></div>
+                  </div> -->
+              <p>kanasvi@gmail.com</p>
+              <a href="">Manage your Google Account</a>
+              <hr />
+              <div class="profile">
+                <div class="profile-info">
+                  <br />
+                  <a href=""
+                    ><img src="images/profile.jpg" alt="" />
+                    <p>Create a channel</p></a
+                  >
+                  <a href=""
+                    ><img src="images/purchase.png" alt="" />
+                    <p>Purchases and membership</p></a
+                  >
+                  <a href=""
+                    ><img src="images/youtube-shorts.webp" />
+                    <p>Youtube Studio</p></a
+                  >
+                  <a href=""
+                    ><img src="images/subscript.png" alt="" />
+                    <p>Switch account</p></a
+                  >
+                  <a href=""
+                    ><img src="images/subscript.png" alt="" />
+                    <p>Sign out</p></a
+                  >
+                  <hr />
+                  <br />
+                  <a href=""
+                    ><img src="images/library.png" alt="" />
+                    <p>Language:English</p></a
+                  >
+                  <a href=""
+                    ><img src="images/history.png" alt="" />
+                    <p>Location:India</p></a
+                  >
+                  <a href=""
+                    ><img src="images/playlist.png" alt="" />
+                    <p>Settings</p></a
+                  >
+                  <a href=""
+                    ><img src="images/messages.png" alt="" />
+                    <p>Your data in YouTube</p></a
+                  >
+                  <a href=""
+                    ><img src="images/show-more.png" alt="" />
+                    <p>Help</p></a
+                  >
+                  <a href=""
+                    ><img src="images/show-more.png" alt="" />
+                    <p>Send Feedback</p></a
+                  >
+                  <a href=""
+                    ><img src="images/show-more.png" alt="" />
+                    <p>Keyboard shortcuts</p></a
+                  >
+                  <hr />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="container play-container">
+        <div class="row">
+            <div class="play-video">
+                <!-- <video controls autoplay>
+                    <source src="images/video.mp4" type="video/mp4">
+                </video> -->
+                <iframe width="100px" height="100px" src="https://www.youtube.com/embed/Qc2dgdOazuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                <div class="tags">
+                    <a href="">#Coding</a><a href="">#HTML</a>
+                    <a href="">#CSS</a><a href="">#JavaScript</a>
+                    <a href="">#Front End</a><a href="">#Coding</a>
+                </div>
+<h3>Best channel</h3>
+<div class="play-video-info">
+    <p>1058 Views &bull; 2days ago</p>
+    <div>
+        <a href=""><img src="images/like.png" alt="">125</a>
+        <a href=""><img src="images/dislike.png" alt="">125</a>
+        <a href=""><img src="images/Share.png" alt="">Share</a>
+        <a href=""><img src="images/save.png" alt="">Save</a>
+    </div>
+</div>
+<hr>
+<div class="publisher">
+    <img src="images/Jack.png" alt="">
+    <div>
+        <p>
+            Channel Name
+                </p>
+                <span>
+                    500k Subscribers
+                </span>
+    </div>
+    <button>Subscribed</button>
+</div>
+<div class="vid-desc">
+    <p>Best Channel</p>
+    <p>Subscribe to be sucssesfull</p>
+    <hr>
+    <h4>150 comments</h4>
+
+<div class="add-comment">
+    <img src="images/Jack.png" alt="">
+    <input type="text" placeholder="Write comments.......">
+</div>
+<div class="old-comment">
+    <img src="images/Jack.png" alt="">
+    <div>
+        <h3>Kanasvi <span>2 days ago</span></h3> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Amet delectus pariatur optio sint voluptatem iusto ad beatae autem veritatis corporis tempore libero,
+         vel similique minima repellat eum velit quisquam eveniet!</p>
+         <div class="action">
+             <img src="images/like.png" alt="">
+             <span>500</span>
+             <img src="images/dislike.png" alt="">
+             <span>100</span>
+             <span>Reply</span>
+             <a href="">All Replies</a>
+         </div>
+    </div>
+</div>
+</div>
+            </div>
+
+
+
+
+            
+            
+            <div class="right-sidebar">
+               
+                <div class="side-video-list">
+                    <a href="" class="small">
+                    <img src="images/tom&jerry.png" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Best Channel</a>
+                        <p>Channel Name</p>
+                        <p>15k Views</p>
+                    </div>
+                </div>
+
+                <div class="side-video-list">
+                    <a href="" class="small">
+                    <img src="images/tom&jerry.png" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Best Channel</a>
+                        <p>Channel Name</p>
+                        <p>15k Views</p>
+                    </div>
+                </div>
+
+
+
+                <div class="side-video-list">
+                    <a href="" class="small">
+                    <img src="images/apana college.webp" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Best Channel</a>
+                        <p>Channel Name</p>
+                        <p>15k Views</p>
+                    </div>
+                </div>
+
+
+
+                <div class="side-video-list">
+                    <a href="" class="small">
+                    <img src="images/apana college.webp" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Best Channel</a>
+                        <p>Channel Name</p>
+                        <p>15k Views</p>
+                    </div>
+                </div>
+
+
+
+                <div class="side-video-list">
+                    <a href="" class="small">
+                    <img src="images/tom&jerry.png" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Best Channel</a>
+                        <p>Channel Name</p>
+                        <p>15k Views</p>
+                    </div>
+                </div>
+
+
+
+                <div class="side-video-list">
+                    <a href="" class="small">
+                    <img src="images/apana college.webp" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Best Channel</a>
+                        <p>Channel Name</p>
+                        <p>15k Views</p>
+                    </div>
+                </div>
+
+
+
+                <div class="side-video-list">
+                    <a href="" class="small">
+                    <img src="images/tom&jerry.png" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Best Channel</a>
+                        <p>Channel Name</p>
+                        <p>15k Views</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
