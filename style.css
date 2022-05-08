@@ -68,7 +68,7 @@ margin-right: 25px;
     width:16px;
 }
 .nav-middle .search-box {
-    border:1px solid #ccc;
+    border:1px solid grey;
     margin-right: 15px;
     padding:9px 18px;
     
@@ -314,7 +314,6 @@ width:15px;
     width: 35px;
     margin-right: 10px;
     border-radius: 50%;
-    
 }
 .vid-info {
     color: #5a5a5a;
@@ -581,7 +580,7 @@ margin-right: 5px;
     --font-color: #000000;
   }
   .theme-dark {
-    --color-secondary: #243133;
+    --color-secondary: rgb(29, 29, 38);
     --font-color: #ffffff;
   }
   nav, .toggle, .container,.sidebar , p, a ,h3, h1, h4 , .vid-info ,  a, .settings-height, .play-container, .vid-desc, .old-comment, h3,span, a, .add-comment, a , h3  {

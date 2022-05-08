@@ -19,7 +19,26 @@ var logoDark=document.querySelector(".darkLogo");
 var logoLight=document.querySelector(".nav-left .logo");
 var youtubeLogo=document.getElementById("youtube-logo");
 var whiteMenu=document.getElementById("new-icon");
-
+var whiteCreate=document.getElementById("create");
+var whiteApp=document.getElementById("apps");
+var whiteBell=document.getElementById("notification");
+var whiteHome=document.getElementById("home");
+var whiteExplore=document.getElementById("explore");
+var whiteShorts=document.getElementById("shorts");
+var whiteSub=document.getElementById("sub");
+var whiteLab=document.getElementById("lab");
+var whiteHistory=document.getElementById("history");
+var whitePlay=document.getElementById("playList");
+var whiteMsg=document.getElementById("msg");
+var arrow=document.getElementById("arrow");
+var whiteUser=document.getElementById("user");
+var whiteDoller=document.getElementById("doller");
+var whiteStudio=document.getElementById("sett");
+var whiteSwitch=document.getElementById("switch");
+var whiteLog=document.getElementById("logout");
+var whiteLang=document.getElementById("language");
+var whiteLocation=document.getElementById("location");
+var whiteSett=document.getElementById("setti");
 
 menuIcon.onclick=function () {
     sideBar.classList.toggle("samll-sidebar");
@@ -67,23 +86,105 @@ function setTheme(themeName) {
       {
           setTheme('theme-light');
           youtubeLogo.src="images/logo.png";
+          whiteMenu.src="images/menu.png";
+          whiteCreate.src="images/create.jpg";
+          whiteApp.src="images/more.png";
+          whiteBell.src="images/notification.png";
+          whiteHome.src="images/home.png";
+          whiteExplore.src="images/explore.png";
+          whiteShorts.src="images/short.png";
+          whiteSub.src="images/subscript.png";
+          whiteLab.src="images/library.png";
+          whiteHistory.src="images/history.png";
+          whitePlay.src="images/playlist.png";
+          whiteMsg.src="images/messages.png";
+          arrow.src="images/show-more.png";
+          whiteUser.src="images/usernew.png";
+          whiteDoller.src="images/doller.png";
+          whiteStudio.src="images/setting.png";
+          whiteSwitch.src="images/switch.png";
+          whiteLog.src="images/signout.png";
+          whiteLang.src="images/lang.png";
+          whiteLocation.src="images/loc.png";
+          whiteSett.src="images/set.png";
       }
       else {
           setTheme('theme-dark');
           youtubeLogo.src="images/youtube.png";
+          whiteMenu.src="images/whitemenu.png";
+          whiteCreate.src="images/whiteCreate.png";
+          whiteApp.src="images/whiteApps.png";
+          whiteBell.src="images/whiteNotification.png";
+          whiteHome.src="images/whiteHome.png";
+          whiteExplore.src="images/whiteExplore.png";
+          whiteShorts.src="images/whiteShorts.png";
+          whiteSub.src="images/whiteSub.png";
+          whiteLab.src="images/whiteLib.png";
+          whiteHistory.src="images/whiteHistory.png";
+          whitePlay.src="images/whitePlaylist.png";
+          whiteMsg.src="images/whiteMsg.png";
+          arrow.src="images/whiteArrow.png";
+          whiteUser.src="images/whiteUser.png";
+          whiteDoller.src="images/whiteDoller.png";
+          whiteStudio.src="images/whiteSettings.png";
+          whiteSwitch.src="images/whiteSwitch.png";
+          whiteLog.src="images/whiteLog.png";
+          whiteLang.src="images/whiteLanguage.png";
+          whiteLocation.src="images/whiteLoc.png";
+          whiteSett.src="images/whiteSettings.png";
       }
-    
  }
  
  (function () {
     if (localStorage.getItem('theme') === 'theme-dark') {
         setTheme('theme-dark');
         youtubeLogo.src="images/youtube.png";
-        
+        whiteMenu.src="images/whitemenu.png";
+        whiteCreate.src="images/whiteCreate.png";
+        whiteApp.src="images/whiteApps.png";
+        whiteBell.src="images/whiteNotification.png";
+        whiteHome.src="images/whiteHome.png";
+        whiteExplore.src="images/whiteExplore.png";
+        whiteShorts.src="images/whiteShorts.png";
+        whiteSub.src="images/whiteSub.png";
+        whiteLab.src="images/whiteLib.png";
+        whiteHistory.src="images/whiteHistory.png";
+        whitePlay.src="images/whitePlaylist.png";
+        whiteMsg.src="images/whiteMsg.png";
+        arrow.src="images/whiteArrow.png";
+        whiteUser.src="images/whiteUser.png";
+        whiteDoller.src="images/whiteDoller.png";
+        whiteStudio.src="images/whiteSettings.png";
+        whiteSwitch.src="images/whiteSwitch.png";
+        whiteLog.src="images/whiteLog.png";
+        whiteLang.src="images/whiteLanguage.png";
+        whiteLocation.src="images/whiteLoc.png";
+        whiteSett.src="images/whiteSettings.png";
     } else {
         setTheme('theme-light');
         youtubeLogo.src="images/logo.png";
-       
+        whiteMenu.src="images/menu.png";
+        whiteCreate.src="images/create.jpg";
+        whiteApp.src="images/more.png";
+       whiteBell.src="images/notification.png";
+       whiteHome.src="images/home.png";
+       whiteExplore.src="images/explore.png";
+       whiteShorts.src="images/short.png";
+       whiteSub.src="images/subscript.png";
+       whiteLab.src="images/library.png";
+       whiteHistory.src="images/history.png";
+       whitePlay.src="images/playlist.png";
+       whiteMsg.src="images/messages.png";
+       arrow.src="images/show-more.png";
+       whiteUser.src="images/usernew.png";
+       whiteDoller.src="images/doller.png";
+       whiteStudio.src="images/setting.png";
+       whiteSwitch.src="images/switch.png";
+       whiteLog.src="images/signout.png";
+       whiteLang.src="images/lang.png";
+       whiteLocation.src="images/loc.png";
+       whiteSett.src="images/set.png";
+
     }
 })();
 
@@ -157,7 +258,7 @@ const productList = [
     src:'https://i.ytimg.com/vi/t0Q2otsqC4I/mqdefault.jpg',
     channelName:'Tom&Jerry',
     description:'Cartoon Network',
-    views:'1555K views',
+    views:'255K views',
     days:'2 days',
     time: '22:27',
 },
@@ -287,6 +388,45 @@ views:'105K views',
 days:'2 days',
 time: '22:27',
 },
+{
+    id: 21,
+    src:'https://i.ytimg.com/vi/t0Q2otsqC4I/mqdefault.jpg',
+    channelName:'Tom&Jerry',
+    description:'Cartoon Network',
+    views:'255K views',
+    days:'2 days',
+    time: '22:27',
+},
+
+{
+    id: 22,
+        src:'https://i.ytimg.com/vi/F7OMDDCTro4/mqdefault.jpg',
+        channelName:'Nobita-Sizuka',
+        description:'Doremon New Episodes',
+        views:'100K views',
+        days:'2 days',
+        time: '22:27',
+},
+
+{
+    id: 23,
+        src:'https://i.ytimg.com/vi/3ez10ADR_gM/mqdefault.jpg',
+        channelName:'Learn Economics',
+        description:'Economics',
+        views:'150K views',
+        days:'2 days',
+        time: '22:27',
+},
+{
+    id: 24,
+    src:'https://i.ytimg.com/vi/HXV3zeQKqGY/mqdefault.jpg',
+    channelName:'freecodecamp',
+    description:'SQL Full course',
+    views:'115K views',
+    days:'2 days',
+    time: '22:27',
+},
+
 ]
 
 
