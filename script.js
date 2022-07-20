@@ -6,8 +6,8 @@ var container=document.querySelector(".container");
 var userIcon=document.querySelector(".user-icon");
 var userSetting=document.querySelector(".settings");
 var space=document.querySelector(".logo");
+var sub=document.querySelector(".subscribed-list");
 var setting=document.querySelector(".settings-height");
-
 
 var toggleIcon=document.querySelector(".toggle");
 var navBar=document.querySelector("nav");
@@ -43,6 +43,7 @@ var whiteSett=document.getElementById("setti");
 menuIcon.onclick=function () {
     sideBar.classList.toggle("samll-sidebar");
     container.classList.toggle("large-container");
+    sub.classList.toggle("newSub");
     
 }
 
@@ -57,31 +58,13 @@ menuIcon.onclick=function () {
     }
  
 
- /* toggleIcon.onclick=function ()
- {
-     navBar.classList.toggle("theme");
-     mainSidebar.classList.toggle("theme");
-     mainContainer.classList.toggle("theme1");
-     vidList.classList.toggle("theme2");
-     imgList.classList.toggle("theme2");
-     /* logoDark.classList.toggle("newLight");
-     logoLight.classList.toggle("newLogo");
-
-    youtubeLogo.src="images/youtube.png";
- } */
-
-
 function setTheme(themeName) {
     localStorage.setItem('theme', themeName);
     document.documentElement.className = themeName;
 }
  function themeChange(theme)
  {
-    //  navBar.classList.toggle("theme-");
-     /* mainSidebar.classList.toggle("theme");
-     mainContainer.classList.toggle("theme1");
-     vidList.classList.toggle("theme2");
-     imgList.classList.toggle("theme2"); */
+
       if (localStorage.getItem('theme') === 'theme-dark')
       {
           setTheme('theme-light');
@@ -161,11 +144,11 @@ function setTheme(themeName) {
         whiteLocation.src="images/whiteLoc.png";
         whiteSett.src="images/whiteSettings.png";
     } else {
-        setTheme('theme-light');
-        youtubeLogo.src="images/logo.png";
-        whiteMenu.src="images/menu.png";
-        whiteCreate.src="images/create.jpg";
-        whiteApp.src="images/more.png";
+       setTheme('theme-light');
+       youtubeLogo.src="images/logo.png";
+       whiteMenu.src="images/menu.png";
+       whiteCreate.src="images/create.jpg";
+       whiteApp.src="images/more.png";
        whiteBell.src="images/notification.png";
        whiteHome.src="images/home.png";
        whiteExplore.src="images/explore.png";
@@ -202,6 +185,7 @@ const productList = [
         views:'15K views',
         days:'2 days',
         time: '22:27',
+        newSrc:'images/Jack.png',
     },
 
     {
@@ -212,6 +196,7 @@ const productList = [
         views:'250K views',
         days:'2 days',
         time: '22:27',
+        newSrc:'images/user4.png',
    },
 
    {
@@ -222,6 +207,7 @@ const productList = [
     views:'55K views',
     days:'15 days',
     time: '22:27',
+    newSrc:'images/user5.png',
    },
 
    {
@@ -232,6 +218,7 @@ const productList = [
     views:'105K views',
     days:'2 days',
     time: '22:27',
+    newSrc:'images/user6.png',
 },
 
 {
@@ -242,6 +229,7 @@ const productList = [
         views:'5K views',
         days:'2 days',
         time: '22:27',
+        newSrc:'images/user2.png',
 },
 
 {
@@ -252,6 +240,7 @@ const productList = [
         views:'150K views',
         days:'2 days',
         time: '22:27',
+        newSrc:'images/user7.png',
 },
 {
     id: 7,
@@ -261,16 +250,18 @@ const productList = [
     views:'255K views',
     days:'2 days',
     time: '22:27',
+    newSrc:'images/Jack.png',
 },
 
 {
     id: 8,
-        src:'https://i.ytimg.com/vi/F7OMDDCTro4/mqdefault.jpg',
+        src:'https://i.ytimg.com/vi/cUMUTS2ybhg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDhzqJ65SZeAWijq8NY84yWgzqG9Q',
         channelName:'Nobita-Sizuka',
         description:'Doremon New Episodes',
         views:'100K views',
         days:'2 days',
         time: '22:27',
+        newSrc:'images/user1.png',
 },
 
 {
@@ -281,6 +272,7 @@ const productList = [
         views:'150K views',
         days:'2 days',
         time: '22:27',
+        newSrc:'images/user4.png',
 },
 {
     id: 10,
@@ -290,6 +282,7 @@ const productList = [
     views:'115K views',
     days:'2 days',
     time: '22:27',
+    newSrc:'images/user3.png',
 },
 
 {
@@ -300,6 +293,7 @@ const productList = [
         views:'1K views',
         days:'2 days',
         time: '22:27',
+        newSrc:'images/user2.png',
     },
 
 {
@@ -310,15 +304,17 @@ const productList = [
         views:'15K views',
         days:'2 days',
         time: '22:27',
+        newSrc:'images/user5.png',
 },
 {
     id: 13,
-        src:'https://i.ytimg.com/vi/F7OMDDCTro4/mqdefault.jpg',
+        src:'https://i.ytimg.com/vi/cUMUTS2ybhg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDhzqJ65SZeAWijq8NY84yWgzqG9Q',
         channelName:'Nobita-Sizuka',
         description:'Doremon New Episodes',
         views:'100K views',
         days:'2 days',
         time: '22:27',
+        newSrc:'images/user6.png',
 },
 
 {
@@ -329,6 +325,7 @@ const productList = [
         views:'150K views',
         days:'2 days',
         time: '22:27',
+        newSrc:'images/Jack.png',
 },
 {
     id: 15,
@@ -338,6 +335,7 @@ const productList = [
     views:'115K views',
     days:'2 days',
     time: '22:27',
+    newSrc:'images/user1.png',
 },
 
 {
@@ -348,6 +346,7 @@ const productList = [
         views:'1K views',
         days:'2 days',
         time: '22:27',
+        newSrc:'images/user2.png',
     },
 
 {
@@ -358,6 +357,7 @@ const productList = [
         views:'15K views',
         days:'2 days',
         time: '22:27',
+        newSrc:'images/user3.png',
 },  
 {
     id: 18,
@@ -367,6 +367,7 @@ const productList = [
     views:'250K views',
     days:'2 days',
     time: '22:27',
+    newSrc:'images/user7.png',
 },
 
 {
@@ -377,6 +378,7 @@ description:'How to learn',
 views:'55K views',
 days:'15 days',
 time: '22:27',
+newSrc:'images/user6.png',
 },
 
 {
@@ -387,6 +389,7 @@ description:'WebDevelopment Full Course',
 views:'105K views',
 days:'2 days',
 time: '22:27',
+newSrc:'images/user5.png',
 },
 {
     id: 21,
@@ -396,16 +399,18 @@ time: '22:27',
     views:'255K views',
     days:'2 days',
     time: '22:27',
+    newSrc:'images/Jack.png',
 },
 
 {
     id: 22,
-        src:'https://i.ytimg.com/vi/F7OMDDCTro4/mqdefault.jpg',
+        src:'https://i.ytimg.com/vi/cUMUTS2ybhg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDhzqJ65SZeAWijq8NY84yWgzqG9Q',
         channelName:'Nobita-Sizuka',
         description:'Doremon New Episodes',
         views:'100K views',
         days:'2 days',
         time: '22:27',
+        newSrc:'images/user3.png',
 },
 
 {
@@ -416,6 +421,7 @@ time: '22:27',
         views:'150K views',
         days:'2 days',
         time: '22:27',
+        newSrc:'images/user2.png',
 },
 {
     id: 24,
@@ -425,35 +431,33 @@ time: '22:27',
     views:'115K views',
     days:'2 days',
     time: '22:27',
+    newSrc:'images/user1.png',
+
 },
 
 ]
-
-
+console.log(typeof(id));
 
  for(let item=0;item<productList.length;item++)
  {
-     const{src,channelName,description,views,days}= productList[item]
+     const{src,channelName,description,views,days,newSrc}= productList[item]
 
      const vidDiv= document.createElement('div')
      //carddiv.className = 'list-container'
 
      vidDiv.innerHTML = `
-     <div class="vid-list">
-     <a href="video.html">
-     <img class="img-class" src="${src}" alt="">
-     
-     <div class="flex-div">
-        <img src="images/Jack.png" alt="" />
-
-     <div class="vid-info">
-         <div ><a href=""><Strong>${channelName}</Strong></a></div>
-         <p>${description}</p>
-             <p><strong>${views} &bull; ${days}</strong></p> 
-     </div>
-     </div>
-     </div>`
- 
+    <div class="vid-list">
+    <a href="video.html">
+    <img class="img-class" src="${src}" alt="">
+    <div class="flex-div">
+    <img src="${newSrc}" alt="" />
+    <div class="vid-info">
+    <div ><a href=""><Strong>${channelName}</Strong></a></div>
+    <p>${description}</p>
+    <p><strong>${views} &bull; ${days}</strong></p> 
+    </div>
+    </div>
+    </div>`
      list.appendChild(vidDiv)
  }
  
